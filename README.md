@@ -9,10 +9,10 @@ How to download this repository
 create a folder to store the repo on the RPi.
 Open it using right-click & open in terminal type in:
 
-  git clone git://github.com/learnICT/Rasberry-Pi-club.git
+    git clone git://github.com/learnICT/RPi-club.git
   
 To keep it updated
 ==================
 Open the folder you saved the repo into using terminal and type in: 
 
-  git pull
+    git pull
