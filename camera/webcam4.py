@@ -6,20 +6,14 @@
 #
 # Created:     07/09/2013
 # Copyright:   (c) Ali 2013
-# Thanks:      based on the script of http://www.cl.cam.ac.uk/ students
-#              and Matt Venn
 #-------------------------------------------------------------------------------
-import os
+from PIL import Image
 from imgproc import *
 
-def capture_image(filename="frame.jpg"):
-    # open the webcam
-    my_camera = Camera(320, 240)
-    # grab an image from the camera
-    my_image = my_camera.grabImage()
-    command = "my_image" % filename
-    status = os.system(command)
-    return status
+# open the webcam
+my_camera = Camera(320, 240)
+# grab an image from the camera
+my_image = my_camera.grabImage()
 
-#take a picture
-capture_image()
+im = Image.new("RBG", (my_image.width, my_image.height))
+im.save("image.png")
