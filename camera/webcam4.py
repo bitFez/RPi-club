@@ -6,6 +6,7 @@
 #
 # Created:     07/09/2013
 # Copyright:   (c) Ali 2013
+# Version      0.3
 #-------------------------------------------------------------------------------
 from PIL import Image
 from imgproc import *
@@ -15,5 +16,5 @@ my_camera = Camera(320, 240)
 # grab an image from the camera
 my_image = my_camera.grabImage()
 
-im = Image.new("RBG", (my_image.width, my_image.height))
+im = Image.putdata(my_image)
 im.save("image.png")
