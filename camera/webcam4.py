@@ -6,9 +6,9 @@
 #
 # Created:     07/09/2013
 # Copyright:   (c) Ali 2013
-# Version      0.3
+# Version      0.4
 #-------------------------------------------------------------------------------
-from PIL import Image
+import PIL.Image
 from imgproc import *
 
 # open the webcam
@@ -16,5 +16,5 @@ my_camera = Camera(320, 240)
 # grab an image from the camera
 my_image = my_camera.grabImage()
 
-im = Image.putdata(my_image)
-im.save("image.png")
+im = PIL.Image.new("RGB", (my_image.width, my_image.height))
+im.PIL.save("image.png")
