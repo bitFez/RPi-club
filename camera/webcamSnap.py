@@ -6,7 +6,7 @@
 # Author:      Ali Mulla
 #
 # Created:     13/09/2013
-# Copyright:   (c) Ali 2013
+# Version:     0.3
 # Licence:     Free to use, please give credit
 #-------------------------------------------------------------------------------
 
@@ -14,7 +14,7 @@
 # terminal window
 import os
 
-def takeSnap(filename="snap.jpg"):
+def takeSnap(filename="snap_%d.jpg"):
     # This part is the command that would have been written into terminal
     os.system ("fswebcam --no-banner -r 600x480 -d /dev/video0 %s" % filename)
 
