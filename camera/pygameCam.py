@@ -3,7 +3,7 @@
 # Name:        pygameCam
 # Purpose:
 #
-# Author:      Ali Mulla
+# Author:      Ali Mulla of www.learnICT.it
 #
 # Created:     13/09/2013
 # Version:     0.1
@@ -15,10 +15,9 @@ import pygame, sys
 from pygame.locals import *
 import pygame.camera
 
-pygame.init()
-pygame.camera.init
-
 def takeSnap():
+    pygame.init()
+    pygame.camera.init
     width = 640
     height = 480
     cam = pygame.camera.Camera("/dev/video0",(width,height))
