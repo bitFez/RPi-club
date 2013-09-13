@@ -16,7 +16,7 @@ import os
 
 def takeSnap(filename="snap.jpg"):
     # This part is the command that would have been written into terminal
-    os.system("fswebcam --no-banner -r 600x480 -d /dev/video0 %s" % filename
+    os.system ("fswebcam --no-banner -r 600x480 -d /dev/video0 %s" % filename)
 
 #takes the photo
 takeSnap()
