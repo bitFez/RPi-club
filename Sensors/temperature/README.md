@@ -16,3 +16,11 @@ See the image here: http://webshed.org/wiki/File:Fritzing_rPI_DS1820.png
 # More information
 
 The ds18b20 is made by maxim. The datasheet is here: http://datasheets.maximintegrated.com/en/ds/DS18B20.pdf
+
+Cambridge uni guide:
+http://www.cl.cam.ac.uk/projects/raspberrypi/tutorials/temperature/step3b.py
+
+Raspberry pi guide:
+http://www.raspberrypi-spy.co.uk/2013/03/raspberry-pi-1-wire-digital-thermometer-sensor/
+
+Some work still needs to be done on the readTemp.py as it has not been tested and needs for the opening of the device to be tweaked like in the 
