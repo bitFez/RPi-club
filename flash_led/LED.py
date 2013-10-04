@@ -8,23 +8,10 @@ import RPi.GPIO as GPIO
 #clear up the current board setup.
 GPIO.cleanup()
 #set the RPi to use the RPi board pin numbers
-GPIO.setmode(GPIO.board)
+GPIO.setmode(GPIO.BOARD)
 
 #Now we will set the pin number we will use to send the signal to the LED
-GPIO.setup(7, GPIO.out)
+GPIO.setup(7, GPIO.OUT)
 
-# this is a variable that will be used to determine whether the LED should be on or off
-led7state = 0
-
-#function to turn on LED
-def turnonled7():
-    led7state = 1
-    
-#function to turn LED off
-def turnoffled7():
-    led7state = 0
-    
-if led7state == 1:
-    GPIO.output(7, GPIO.HIGH)
-else:
-    GPIO.output(7, GPIO.LOW)
+#Set the LED on... Turn to False to command it off again.
+GPIO.output(7, True)
