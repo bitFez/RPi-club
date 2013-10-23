@@ -5,7 +5,7 @@
 # Purpose:     To take still images using a webcam and pygame
 #
 # Author:      Ali Mulla
-# Version:     0.4
+# Version:     1.0
 # Created:     22/10/2013
 # Copyright:   No Copyright
 # Thanks:      Thanks to Ajit Akar for the idea on CAS forums.
@@ -19,7 +19,7 @@ import pygame.camera
 from pygame.locals import *
 now = datetime.datetime.now()
 
-def takeSnap(filename= "webcam" + now.strftime("%Y-%m-%d %H:%M") + ".jpg"):
+def takeSnap(filename= "webcam" + now.strftime("%Y-%m-%d %H:%M:%S") + ".jpg"):
     pygame.init()
     pygame.camera.init()
     cam = pygame.camera.Camera("/dev/video0",(640,480))
