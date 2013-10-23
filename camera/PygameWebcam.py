@@ -3,12 +3,12 @@
 #-------------------------------------------------------------------------------
 # Name:        Pygame Webcam Snap
 # Purpose:     To take still images using a webcam and pygame
-#
-# Author:      Ali Mulla
-# Version:     1.0
+# Author:      Ali Mulla of www.LearnICT.it
+# Twitter      @LearnICTit
+# Version:     1.1
 # Created:     22/10/2013
 # Copyright:   No Copyright
-# Thanks:      Thanks to Ajit Akar for the idea on CAS forums.
+# Thanks:      Thanks to Ajit jaokar for the idea on CAS forums.
 #-------------------------------------------------------------------------------
 
 import sys
