@@ -1,0 +1,22 @@
+# First add the code to be able to use external commands
+import os
+
+
+#making a date timestamp for pictures
+DATE=$(date +"%Y-%m-%d_%H%M")
+
+#the function for taking pictures
+def pic():
+    raspistill -o $DATE.jpg
+
+def tlpic():
+    #command below will automatically capture an image every 10 seconds for 10 minutes.
+    raspistill -o $DATE_%04d.jpg -tl 10000 -t 600000
+
+def makevid():
+    avconv -r 10 -i $DATE_%04d.jpg -r 10 -vcodec libx264 -crf 20 -g 15 pic_timelapse.mp4
+
+
+#tlpic()
+
+#makevid()
