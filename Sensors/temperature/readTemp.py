@@ -9,7 +9,7 @@
 # Thanks:      Matthew Kirk of Cambridge Uni &, Raspberrypispy.co.uk &
 #              Adafruit.com. This is an almagamation of their works
 #-------------------------------------------------------------------------------
-
+import glob
 import os  #This will allow us to give commands as we would to the terminal
 #The following lines will allow us to set the device to report temperature
 os.system('modprobe w1-gpio')
