@@ -2,12 +2,14 @@
 # Name:        Temp1
 # Purpose:     Sensing Temperature in Celcius
 #
-# Author:      Ali Mulla
-# Version:     0.1 (untested)
+# Editor:      Ali Mulla
+# Version:     0.2 (untested)
 # Created:     12/10/2013
 # Copyright:   No Copyright
 # Thanks:      This has been edited to display just the temp in celcius from
 #              from the brilliant example written by Simon Monk, Adafruit.
+#              This should work out of the box without having to edit the config file
+#              as is required in some guides.
 #-------------------------------------------------------------------------------
 
 import os
@@ -39,4 +41,4 @@ def read_temp():
         return temp_c
 
 #To read the temp run:
-print("The temperature is " + read_temp())
+print("The temperature is " + str(read_temp()))
