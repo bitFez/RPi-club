@@ -1,4 +1,7 @@
 # First add the code to be able to use external commands
+# Use terminal to execute this file. eg
+# python piModule_TimeLaps.py
+
 import os
 
 
