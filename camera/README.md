@@ -1,5 +1,8 @@
 # Cameras
 
+## Pi Camera Module
+in order to use the Pi Camera module, you must remember to enable the camera under Raspbian settings. The script for the PiCamera is very simple but [check here](https://www.raspberrypi.org/learning/getting-started-with-picamera/worksheet/) for more details on how to enable camera and more settings.
+
 ## Web Cameras
 
 Connecting cameras is easy, but only some cameras work. 
