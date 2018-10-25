@@ -12,6 +12,9 @@ If the camera is a webcam, we can use a program called fswebcam to take an image
 [Look here](http://elinux.org/RPi_USB_Webcams) to see which cameras work on the Raspberry pi. Most of my testing has been done on the Playstation 3 eye camera.
 I have to stress some cameras work fine when streaming but are no good at taking stills. __DO your reading!!__
 
+Also very important... some of code for the webcam examples use a module called fswebcam. You must install this using the terminal on the raspberry pi. do this by typing:
+  sudo apt-get install fswebcam
+
 ## DSLR camera
 
 We need to camera to either support PTP (usually mid priced amateur cameras and above), or be a standard USB webcam. 
