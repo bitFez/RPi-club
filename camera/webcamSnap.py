@@ -2,11 +2,12 @@
 #-------------------------------------------------------------------------------
 # Name:        webcamSnap
 # Purpose:     Takes a picture using a webcam on the raspberry pi from within Python
-#
+#              - VERY IMPORTANT - You need to have installed fswebcam using terminal
+#              on the RPi
 # Author:      Ali Mulla of www.learnICT.it
 #
 # Created:     13/09/2013
-# Version:     1.2
+# Version:     1.3
 # Licence:     Free to use, please give credit
 #-------------------------------------------------------------------------------
 
